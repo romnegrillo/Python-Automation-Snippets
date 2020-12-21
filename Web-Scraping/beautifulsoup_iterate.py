@@ -20,19 +20,19 @@ from bs4 import BeautifulSoup
 import ssl
 
 # To ignore https cert.
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+context = ssl.create_default_context()
+context.check_hostname = False
+context.verify_mode = ssl.CERT_NONE
 
 # Get inputs
 url_input = input("Enter url: ")
-count = int(input("Enter count: "))  # Based on example, count of 4 means loop 5 times since the first is not counted.
+count = int(input("Enter count: "))  # Based on example, count of 4 means loop 5 times since it starts with 0.
 link_pos = int(input("Enter position: "))-1   # Based on example, position 3 means index 2 so we subtract 1.
 
 for i in range(count+1):
     
     # Open link with the input url.
-    with urllib.request.urlopen(url_input, context = ctx) as f:
+    with urllib.request.urlopen(url_input, context = context) as f:
         
         print("Retrieving: {}".format(url_input))
 

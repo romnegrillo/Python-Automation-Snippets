@@ -6,7 +6,7 @@ base_url = "http://py4e-data.dr-chuck.net/json?"
 while True:
     location = input("Enter location: ")
 
-    url = base_url + urllib.parse.urlencode({"address": location, "key":42})
+    url = base_url + urllib.parse.urlencode({"address": location, "key": 42 })
 
     with urllib.request.urlopen(url) as f:
         print("Retrieving {}".format(url))
