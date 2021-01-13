@@ -16,8 +16,6 @@ def install():
     Tested in Ubuntu 20.04.1"""
 
     print(message)
-
-
     input("Press enter to cotinue.")
 
 
@@ -41,7 +39,7 @@ def install():
     failed_commands = []
 
     for command in commands:
-        result = subprocess.run([command], shell = True)
+        result = subprocess.run([command], shell = True, capture_output = True)
 
         if result.returncode != 0:
             failed_commands.append(command)
@@ -52,7 +50,7 @@ def install():
         for command in failed_commands:
             print(command)
     else:
-        print("All commands successfully executed")
+        print("All commands successfully executed.")
 
 def main():
     install()
