@@ -49,7 +49,7 @@ def send_email(gmail_email, gmail_password, recipient, subject, body, file_path 
     # SMTP SSL uses port 465
     mail_server = smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context)
     print(mail_server.login(gmail_email, gmail_password))
-    mail_server.sendmail(gmail_email, "romnegrillo@gmail.com", message)
+    mail_server.sendmail(gmail_email, recipient, message)
 
     mail_server.quit()
 

@@ -10,10 +10,8 @@ def install():
     I always install when settings up my Ubuntu machine.
     """
 
-    message = """This script is used to update and
-    install packages that I normally used 
-
-    Tested in Ubuntu 20.04.1"""
+    message = "This script is used to update and install packages that I normally used.\n"
+    message += "Tested in Ubuntu 20.04.1"
 
     print(message)
     input("Press enter to cotinue.")

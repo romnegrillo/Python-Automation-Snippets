@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import subprocess
 
 
@@ -8,11 +10,8 @@ def install():
     for Machine Learning.
     """
 
-    message = """This script is used to update and
-    install packages that I normally used in 
-    Machine Learning with Python.
-
-    Tested in Ubuntu 20.04.1"""
+    message = "This script is used to update and install packages that I normally used in Machine Learning with Python.\n"
+    message += "Tested in Ubuntu 20.04.1"
 
     print(message)
     input("Press enter to cotinue.")
@@ -32,6 +31,8 @@ def install():
     for command in commands:
         print(command)
         result = subprocess.run([command], shell = True, capture_output = True)
+        
+        print(result)
         
         if result.returncode != 0:
             failed_commands.append(command)
