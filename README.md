@@ -1,6 +1,6 @@
 # Python-Snippets
 
-<img src="python_logo.png" width="48">
+<img src="python_logo.png" width="150">
 
 ### About
 This reposity contains snippets of code that I use for
