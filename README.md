@@ -1,5 +1,7 @@
 # Python-Snippets
 
+![Python Logo](python_logo.png)
+
 ### About
 This reposity contains snippets of code that I use for
 development in Python. This includes automation, frameworks,
