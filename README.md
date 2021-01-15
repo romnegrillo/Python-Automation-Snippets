@@ -1,6 +1,6 @@
 # Python-Snippets
 
-<img src="python_logo.png" width="150">
+![Python-Logo](/python_logo.png?raw=true)
 
 ### About
 This reposity contains snippets of code that I use for
